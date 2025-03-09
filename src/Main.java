@@ -37,7 +37,6 @@ class Animal {
         System.out.println("Животное спит");
     }
 }
-
 class Dog extends Animal {
     private String poroda;
 
@@ -56,7 +55,6 @@ class Dog extends Animal {
         System.out.println("Собака ест " + food);
     }
 }
-
 class Cat extends Animal {
     private String color;
 
@@ -79,7 +77,6 @@ class Cat extends Animal {
         System.out.println("Кошка точит когти");
     }
 }
-
 class Horse extends Animal {
     private String poroda;
 
@@ -102,7 +99,6 @@ class Horse extends Animal {
         System.out.println("Лошадь галопирует");
     }
 }
-
 class Veterinar {
     public void treatAnimal(Animal animal) {
         System.out.println("Лечение животного:");
