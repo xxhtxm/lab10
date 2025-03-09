@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Dog dog = new Dog("мясо", "будка", "овчарка");
-        Cat cat = new Cat("корм", "дом", "белый");
+        Cat cat = new Cat("корм", "дом", "черный");
         Horse horse = new Horse("сено", "конюшня", "арабская");
 
         Veterinar veter = new Veterinar();
@@ -24,20 +24,16 @@ class Animal {
         this.food = food;
         this.location = location;
     }
-
     public void makeNoise() {
         System.out.println("Животное издает звук");
     }
-
     public void eat() {
         System.out.println("Животное ест " + food);
     }
-
     public void sleep() {
         System.out.println("Животное спит");
     }
 }
-
 class Dog extends Animal {
     private String poroda;
 
@@ -45,22 +41,15 @@ class Dog extends Animal {
         super(food, location);
         this.poroda = poroda;
     }
-
     @Override
     public void makeNoise() {
         System.out.println("Собака лает.");
     }
-
     @Override
     public void eat() {
         System.out.println("Собака ест " + food);
     }
-
-    public void fetch() {
-        System.out.println("Собака приносит мяч");
-    }
 }
-
 class Cat extends Animal {
     private String color;
 
@@ -68,7 +57,6 @@ class Cat extends Animal {
         super(food, location);
         this.color = color;
     }
-
     @Override
     public void makeNoise() {
         System.out.println("Кошка мяукает");
@@ -83,7 +71,6 @@ class Cat extends Animal {
         System.out.println("Кошка точит когти");
     }
 }
-
 class Horse extends Animal {
     private String poroda;
 
@@ -91,7 +78,6 @@ class Horse extends Animal {
         super(food, location);
         this.poroda = poroda;
     }
-
     @Override
     public void makeNoise() {
         System.out.println("Лошадь ржет");
@@ -106,7 +92,6 @@ class Horse extends Animal {
         System.out.println("Лошадь галопирует");
     }
 }
-
 class Veterinar {
     public void treatAnimal(Animal animal) {
         System.out.println("Лечение животного:");
