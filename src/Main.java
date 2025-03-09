@@ -24,15 +24,12 @@ class Animal {
         this.food = food;
         this.location = location;
     }
-
     public void makeNoise() {
         System.out.println("Животное издает звук");
     }
-
     public void eat() {
         System.out.println("Животное ест " + food);
     }
-
     public void sleep() {
         System.out.println("Животное спит");
     }
@@ -44,12 +41,10 @@ class Dog extends Animal {
         super(food, location);
         this.poroda = poroda;
     }
-
     @Override
     public void makeNoise() {
         System.out.println("Собака лает.");
     }
-
     @Override
     public void eat() {
         System.out.println("Собака ест " + food);
@@ -62,7 +57,6 @@ class Cat extends Animal {
         super(food, location);
         this.color = color;
     }
-
     @Override
     public void makeNoise() {
         System.out.println("Кошка мяукает");
@@ -84,7 +78,6 @@ class Horse extends Animal {
         super(food, location);
         this.poroda = poroda;
     }
-
     @Override
     public void makeNoise() {
         System.out.println("Лошадь ржет");
