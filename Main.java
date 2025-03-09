@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         Dog dog = new Dog("мясо", "будка", "овчарка");
-        Cat cat = new Cat("корм", "дом", "черный");
+        Cat cat = new Cat("корм", "дом", "белый");
         Horse horse = new Horse("сено", "конюшня", "арабская");
 
         Veterinar veter = new Veterinar();
