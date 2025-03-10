@@ -10,10 +10,13 @@ public class Main {
         veter.treatAnimal(horse);
         dog.makeNoise();
         dog.eat();
+        dog.fetch();
         cat.makeNoise();
         cat.eat();
+        cat.scratch();
         horse.makeNoise();
         horse.eat();
+        horse.gallop();
     }
 }
 class Animal {
@@ -49,6 +52,8 @@ class Dog extends Animal {
     public void eat() {
         System.out.println("Собака ест " + food);
     }
+
+    public void fetch() { System.out.println("Собака приносит мяч");}
 }
 class Cat extends Animal {
     private String color;
