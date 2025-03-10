@@ -48,7 +48,7 @@ class Dog extends Animal {
     public void makeNoise() {
         System.out.println("Собака лает.");
     }
-    @Override
+@Override
     public void eat() {
         System.out.println("Собака ест " + food);
     }
@@ -66,8 +66,7 @@ class Cat extends Animal {
     public void makeNoise() {
         System.out.println("Кошка мяукает");
     }
-
-    @Override
+@Override
     public void eat() {
         System.out.println("Кошка ест " + food);
     }
@@ -99,7 +98,6 @@ class Horse extends Animal {
 }
 class Veterinar {
     public void treatAnimal(Animal animal) {
-        System.out.println("Лечение животного:");
         System.out.println("Еда животного: " + animal.food);
         System.out.println("Местоположение животного: " + animal.location);
     }
